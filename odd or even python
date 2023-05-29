@@ -1,0 +1,21 @@
+# Odd or even numbers
+
+while True:
+    # Asking the user to input a number
+    # For this case the range that we have set is between 1 to 1000
+    number = int(input("What number are you thinking of?: "));
+
+    # Checking if the number is within the range
+    # The condition (0 < = number <= 1000) is equal to range(0, 1001) and also equal to (number >= 0 and number <= 1000)
+    if (1 <= number <= 1000): 
+        print(f"The numbe that you chose is: {number}"); # printing the selected number formated
+
+        if (number % 2) == 0:
+            print("{0} is Even".format(number));
+        else:
+            print("{0} is Odd".format(number));
+        
+        break
+    # the following is going to be executed only if the user has gave an out of range number
+    else:
+        print("The number that you choose is out of range.\nPlease select a number between 1 to 1000.");
